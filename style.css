@@ -1,0 +1,8 @@
+body{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    padding: 0em 1em;
+    background-color: #f0f9ff;
+}
+.container{background-color: white;padding: 0.1em 1.2em;}
+h1{font-size:1.5em;font-weight: normal;color: blue;}

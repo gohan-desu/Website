@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello</title>
+        <style>
+            h1{font-size: 2.5em;font-family: cursive;color: #ff0000;}
+            h2{font-size: 2.0em;font-family: fantasy;color: rgb(0, 255, 255);}
+            p{font-size: 1.2em;font-family: sans-serif;color: blue;}
+            span{font:bold italic 1.7em Serif;color: white;background-color: magenta;}
+        </style>
+        <!--要素型セレクタ-->
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <h2>Sample Webpage</h2>
+        <h3>Sample content</h3>
+        <p>これは、<span>Sample</span> のコンテンツです。<br>
+        途中で改行表示もできます</p>
+        <p>別の段落と改行は表示が違います</p>
+        <pre>
+            def func():
+            print("これはサンプルのリストです")
+            print("&lt;pre&gt;タグで記述します")
+        </pre>
+        <hr>
+        <p>間に仕切りを表示することもできます</p>
+        <p>これは、<a href="https://google.com">Google</a>へのリンクです。</p>
+        <hr>
+        <p>順番付けしないリスト</p>
+        <ul>
+            <li>最初の項目です</li>
+            <li>真ん中の項目です</li>
+            <li>最後の項目です</li>
+        </ul>
+        <hr>
+        <p>順番付けしたリスト</p>
+        <ol>
+            <li>最初の項目です</li>
+            <li>真ん中の項目です</li>
+            <li>最後の項目です</li>
+        </ol>
+        <hr>
+        <h2>テーブルの表示</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>YAMADA-Taro</td>
+                    <td>taro@yamada</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>TANAKA-Hanako</td>
+                    <td>hanako@flower</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>MATSUDA-Sachiko</td>
+                    <td>sachiko@happy</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2>フォームの表示</h2>
+        <form>
+            <div>
+                <input type="text" size="40"><!--text入力用のフォーム-->
+            </div>
+            <div>
+                <textarea cols="30"rows="3">default text.</textarea><!--cols横幅、rows縦幅(表示行数)-->
+            </div>
+            <div>
+                <!--チェックマークの部分を表示-->
+                <input type="checkbox" id="ch"><!--id 個々の要素を識別するために割り振る値-->
+                <label for="ch">Checkbox</label><!--チェックマークの内容部分-->
+            </div>
+            <div>
+                <input type="radio" name="r" id="r1">
+                <label for="r1">Radio button A</label><br>
+                <input type="radio" name="r" id="r2">
+                <label for="r2">Radio button B</label>
+            </div>
+            <div>
+                <select size="3" multiple>
+                    <option>項目１</option>
+                    <option>項目２</option>
+                    <option>項目３</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Click"><!--value属性を付与してボタンに表示するテキスト-->
+            </div>
+        </form>
+    </body>
+</html>

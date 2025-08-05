@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <div class="container">
+            <p>
+                <script>
+                    let price = 123500;
+                    let tax0 = 0.08;
+                    let tax1 = 0.1;
+                    document.write("金額:" + price + "<br>");
+                    document.write("軽減税率8%適用:" + price * (1.0 + tax0) + "円<br>");
+                    document.write("通常税率10%:" + price * (1.0 + tax1) + "円<br>");
+                </script>
+            </p>
+        </div>
+        <p>
+        <div class="container">
+            <p>
+                <script>
+                    let num = 12345;
+                    if(num % 2 == 0){
+                        document.write(num + "は、偶数です。<br>");
+                    }
+                    else{
+                        document.write(num + "は、奇数です。<br>");
+                    }
+
+                </script>
+            </p>
+        </div>
+        </p>
+        <div class="container">
+            <p>
+           <script>
+            let jikan = 12;
+            let result = Math.floor(jikan / 6);
+            switch(result){
+                case 0:
+                    document.write('おやすみなさい。' + jikan + '時は深夜です。');
+                    break;
+                case 1:
+                    document.write('おはよう。' + jikan + '時は朝です。');
+                    break;
+                case 2:
+                    document.write('こんにちは。' + jikan + '時は昼です。');
+                    break;
+                case 3:
+                    document.write('こんばんは。' + jikan + '時は夜です。');
+                    break;
+                default:
+                    document.write('?'  + jikan + '時、ですか？');
+            }
+           </script> 
+           </p>
+        </div>
+        <p>
+        <div class="container">
+            <p>
+                <script>
+                    let N = 1103;
+                    let nu = 2;
+                    let resul = true;
+                    while(nu < N){
+                        if(N % nu == 0){
+                            resul = false;
+                            break;
+                        }
+                        nu ++;
+                    }
+                    if(resul){
+                        document.write(N + "は、素数です。");
+                    }
+                        else{
+                            document.write(N + "は、素数じゃないです。");
+                        }
+                </script>
+            </p>
+        </div>
+        </p>
+        <p>
+            <div class="container">
+                <p>
+                <script>
+                    let n2 = "1103";
+                    let result2 = true;
+                    for(let i = 2;i < n2; i++){
+                        if(n2 % i == 0){
+                            result = false;
+                            break;
+                        }
+                    }
+                    if(result2){
+                        document.write(n2 + "は、素数です。");}
+                        else{
+                            document.write(n2 + "は、素数じゃないです。")
+                        }
+                </script>
+                </p>
+            </div>
+        </p>
+        <p>
+            <div class="container">
+                <p>
+                <script>
+                    function hello(name){
+                        document.write("hello, " + name + "!<br>");
+                    }
+                </script>
+                </p>
+            </div>
+        </p>
+         <p>
+            <div class="container">
+                <p>
+                <script>
+                </script>
+                </p>
+            </div>
+        </p>
+         <p>
+            <div class="container">
+                <p>
+                <script></script>
+                </p>
+            </div>
+        </p>
+         <p>
+            <div class="container">
+                <p>
+                <script></script>
+                </p>
+            </div>
+        </p>
+    </body>
+</html>
